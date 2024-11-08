@@ -1,10 +1,10 @@
 "use client"
 
-// import { Button } from "@/components/ui/button";
-// import Input from "postcss/lib/input";
-// import { Textarea } from "@/components/ui/textarea";
-// // import { Select, SelectContent, SelectGroup, SelectItem,SelectLabel, SelectTrigger, SelectValue } from "@components/ui/select"
-// import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt  } from "react-icons/fa";
+import { Button } from "@/components/ui/button";
+import Input from "postcss/lib/input";
+import { Textarea } from "@/components/ui/textarea";
+// import { Select, SelectContent, SelectGroup, SelectItem,SelectLabel, SelectTrigger, SelectValue } from "@components/ui/select"
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt  } from "react-icons/fa";
  
 
 
@@ -62,3 +62,13 @@
 //   </motion.section>
 // }
 // export default Contact;
+
+const Contact = () => {
+  return (
+    <div className="">
+      uiwiinm
+    </div>
+  )
+  };
+
+  export default Contact
