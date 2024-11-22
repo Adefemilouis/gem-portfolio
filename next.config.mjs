@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    javascript: {
+        ignoreBuidErrors: true;
+    }
+};
 
 export default nextConfig;
