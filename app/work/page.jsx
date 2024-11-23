@@ -10,6 +10,8 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@radix
 import Link from "next/link";
 import Image from "next/image";
 import WorkSliderBtns from "@/components/ui/WorkSliderBtns";
+import wor from '/Public/assets/work/wor.png'
+import wat from '/Public/assets/work/wat.png'
 
 
 const projects =[
@@ -18,7 +20,7 @@ const projects =[
     category: "frontend",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie justo sit amet nunc elementum vestibulum. Interdum et malesuada",
     stack: [{ name: "Html 5" }, { name: "Css 3"}, { name:"Javascript"}],
-    image:"/Public/assets/work/wor.png",
+    image: "/Public/assets/work/wor.png",
     live: "",
     github: "",
   },
@@ -27,7 +29,7 @@ const projects =[
     category: "frontend",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie justo sit amet nunc elementum vestibulum. Interdum et malesuada",
     stack: [{ name: "Nextjs " }, { name: "Tailwind.css "}, { name:"Javascript"}],
-    image:"/Public/assets/work/wat.png",
+    image:{wat},
     live: "",
     github: "",
   }
@@ -118,7 +120,7 @@ const handleSlideChange = (swiper) => {
                 <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                 <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                 <div className="relative w-full h-full">
-                  { <Image src={project.image} alt="" fill className="object-cover" /> }
+                  { <Image src={wat} alt="" fill className="object-cover" /> }
                 </div>
                 </div>
               </SwiperSlide>

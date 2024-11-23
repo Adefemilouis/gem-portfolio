@@ -1,6 +1,6 @@
 "use client"
 
-import { title } from 'process';
+
 import {FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs} from 'react-icons/fa'
 import {SiTailwindcss, SiNextdotjs } from 'react-icons/si'
 
@@ -14,17 +14,17 @@ const experience = {
     {
     company: "Babs Digital",
  position: "Front-end Development",
-   duration: "2024",
+   duration: "2023 - Till Date",
     },
     {
-     company: "Babs Digital",
-  position: "Front-end Development",
-   duration: "2024",
+     company: "Ms Fantasy",
+  position: "Junior Front-end Development",
+   duration: "2022 - 2023",
     },
     {
-     company: "Babs Digital",
+     company: "Gem Inovations",
    position: "Front-end Development",
-   duration: "2024",
+   duration: "2021-2023",
     },
     {
      company: "Babs Digital",
@@ -87,20 +87,20 @@ const education = {
   duration: "2024",
    },
    {
-    institution: "Babs Digital",
-  degree: "Front-end Development",
-  duration: "2024",
+    institution: "Federal Polytechnic Ede",
+  degree: "Computer Engineering Technology",
+  duration: "2019 - 2022",
    },
-   {
-    institution: "Babs Digital",
-  degree: "Front-end Development",
-  duration: "2024",
-   },
-   {
-    institution: "Babs Digital",
-  degree: "Front-end Development",
-  duration: "2024",
-   }
+  //  {
+  //   institution: "Babs Digital",
+  // degree: "Front-end Development",
+  // duration: "2024",
+  //  },
+  //  {
+  //   institution: "Babs Digital",
+  // degree: "Front-end Development",
+  // duration: "2024",
+  //  }
   ]
 };
 
@@ -207,14 +207,14 @@ className="min-h-[88vh] flex items-center justify-center py-12 xl:py-8"
       </p>
       <ScrollArea className='h-[400px]'>
         <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px]'>
-        {experience.items.map((item, index)=> {
+        {education.items.map((item, index)=> {
           return(
           <li key={index} className='bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1'>
           <span className='text-accent'>{item.duration}</span>
-          <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>{item.position}</h3>
+          <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>{item.institution}</h3>
           <div className='flex items-center gap-3'>
             <span className='w-[6px] h-[6px] rounded-full bg-accent '></span>
-            <p className='text-white/60'>{item.company}</p>
+            <p className='text-white/60'>{item.degree}</p>
           </div>
         </li>
           )
