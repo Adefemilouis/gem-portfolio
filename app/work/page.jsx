@@ -10,6 +10,8 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@radix
 import Link from "next/link";
 import Image from "next/image";
 import WorkSliderBtns from "@/components/ui/WorkSliderBtns";
+import wor from '/Public/wor.png'
+import wat from '/Public/wat.png'
 
 const projects = [
   {
@@ -18,7 +20,7 @@ const projects = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie justo sit amet nunc elementum vestibulum. Interdum et malesuada",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/wor.png", // Corrected path
+    image: {wor}, // Corrected path
     live: "",
     github: "",
   },
@@ -28,7 +30,7 @@ const projects = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie justo sit amet nunc elementum vestibulum. Interdum et malesuada",
     stack: [{ name: "Nextjs " }, { name: "Tailwind.css " }, { name: "Javascript" }],
-    image: "/wat.png", // Corrected path
+    image: {wat}, // Corrected path
     live: "",
     github: "",
   },
@@ -115,7 +117,7 @@ const Work = () => {
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       <div className="relative w-full h-full">
                         <Image
-                          src="/wor.png"
+                          src={wor}
                           alt="Project image"
                           layout="fill"
                           objectFit="cover"
