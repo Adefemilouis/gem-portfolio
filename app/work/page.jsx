@@ -115,7 +115,7 @@ const Work = () => {
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       <div className="relative w-full h-full">
                         <Image
-                          src={project.image}
+                          src="/wor.png"
                           alt="Project image"
                           layout="fill"
                           objectFit="cover"
