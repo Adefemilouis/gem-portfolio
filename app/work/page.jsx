@@ -20,7 +20,7 @@ const projects = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie justo sit amet nunc elementum vestibulum. Interdum et malesuada",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: {wor}, // Corrected path
+    image: "/wor.png", // Corrected path
     live: "",
     github: "",
   },
@@ -30,7 +30,7 @@ const projects = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie justo sit amet nunc elementum vestibulum. Interdum et malesuada",
     stack: [{ name: "Nextjs " }, { name: "Tailwind.css " }, { name: "Javascript" }],
-    image: {wat}, // Corrected path
+    image: "/wat.png", // Corrected path
     live: "",
     github: "",
   },
@@ -117,14 +117,14 @@ const Work = () => {
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       <div className="relative w-full h-full">
                         <Image
-                          src={wor}
+                          src={project.image}
                           alt="Project image"
                           layout="fill"
                           objectFit="cover"
                         />
                       </div>
                     </div>
-                  </SwiperSlide>
+                  </SwiperSlide> 
                 );
               })}
               <WorkSliderBtns
