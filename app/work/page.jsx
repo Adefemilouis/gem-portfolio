@@ -30,7 +30,7 @@ const projects = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie justo sit amet nunc elementum vestibulum. Interdum et malesuada",
     stack: [{ name: "Nextjs " }, { name: "Tailwind.css " }, { name: "Javascript" }],
-    image: "/wat.png", // Corrected path
+    image: "/wat.png" , // Corrected path
     live: "",
     github: "",
   },
@@ -119,8 +119,10 @@ const Work = () => {
                         <Image
                           src={project.image}
                           alt="Project image"
-                          layout="fill"
-                          objectFit="cover"
+                          // layout="fill"
+                          // objectFit="cover"
+                          width={800}
+                          height={500}
                         />
                       </div>
                     </div>
