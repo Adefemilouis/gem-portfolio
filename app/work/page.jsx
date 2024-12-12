@@ -118,7 +118,7 @@ const Work = () => {
                       <div className="relative w-full h-full">
                         <Image
                           src={project.image}
-                          alt="Project image"
+                          alt={`Project ${project.num} image`}
                           // layout="fill"
                           // objectFit="cover"
                           width={800}
