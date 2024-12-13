@@ -119,10 +119,8 @@ const Work = () => {
                         <Image
                           src={project.image}
                           alt={`Project ${project.num} image`}
-                          // layout="fill"
-                          // objectFit="cover"
-                          width={800}
-                          height={500}
+                           layout="fill"
+                          objectFit="cover"
                         />
                       </div>
                     </div>
