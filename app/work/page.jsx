@@ -16,7 +16,7 @@ const projects = [
     num: "01",
     category: "frontend",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie justo sit amet nunc elementum vestibulum. Interdum et malesuada",
+      "Lorem ipsum  sit amet, consectetur adipiscing elit. Vestibulum molestie justo sit amet nunc elementum vestibulum. Interdum et malesuada",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
     image: "/assets/images/wor.png", // Image paths must be under /public
     live: "",
